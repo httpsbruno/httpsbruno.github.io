@@ -27,9 +27,9 @@ function desenha(){
         //desenhando o pedaço
         c.fillStyle = cores[i]; 
         c.beginPath(); 
-        c.moveTo(200,150); 
-        c.arc(200,150, 120, prevAngle, angle, false); 
-        c.lineTo(200,150); 
+        c.moveTo(230,150); 
+        c.arc(230,150, 120, prevAngle, angle, false); 
+        c.lineTo(230,150); 
         c.fill(); 
         c.strokeStyle = "black"; 
         c.stroke(); 
@@ -42,22 +42,26 @@ function desenha(){
      function sim(){
             data[0] ++;
             c.clearRect(0,0,450,300);
+            c.fillStyle = "white"; 
+            c.fillRect(0,0,450,300); 
             c.font = "italic "+20+"pt Arial ";
             c.fillStyle = "green";
-            c.fillText(data[0].toString(), 10,150);
+            c.fillText(data[0].toString(), 70,150);
             c.fillStyle = "red";
-            c.fillText(data[1].toString(), 400,150);
+            c.fillText(data[1].toString(), 380,150);
             desenha();
     }
         
     function nao(){
             data[1] ++;
             c.clearRect(0,0,450,300);
+            c.fillStyle = "white"; 
+            c.fillRect(0,0,450,300); 
             c.font = "italic "+20+"pt Arial ";
             c.fillStyle = "green";
-            c.fillText(data[0].toString(), 10,150);
+            c.fillText(data[0].toString(), 70,150);
             c.fillStyle = "red";
-            c.fillText(data[1].toString(), 400,150);
+            c.fillText(data[1].toString(), 380,150);
             desenha();
     }
     
