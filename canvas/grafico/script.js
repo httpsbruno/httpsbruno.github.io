@@ -53,7 +53,6 @@ function desenha(){
     function nao(){
             data[1] ++;
             c.clearRect(0,0,450,300);
-            
             c.font = "italic "+20+"pt Arial ";
             c.fillStyle = "green";
             c.fillText(data[0].toString(), 10,150);
