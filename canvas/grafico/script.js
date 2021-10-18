@@ -9,7 +9,7 @@ c.fillRect(0,0,450,300);
 
 function desenha(){
     //cores das opções do gráfico
-    var cores = [ "green","teal"]; 
+    var cores = [ "green","red"]; 
      
     //somando o total do gráfico pizza 
     var total = 0; 
