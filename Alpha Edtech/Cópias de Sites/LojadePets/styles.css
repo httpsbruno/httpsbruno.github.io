@@ -1,0 +1,211 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+    color:#000769;
+
+}
+span{
+    font-family: 'Oswald', sans-serif;
+}
+
+header, ul {
+    display:flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    font-style: bold;  
+    font-size: 30px;  
+    background-color:#000769;   
+    color: white;
+    font-size: 13px;
+}
+li, .logo{
+    margin-left:50px;
+    margin-right:10px;
+}
+header{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.logo{
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    padding-bottom: 10px;
+}
+.carrinho{
+    width: 25px;
+    height: 20.98px;
+    fill: white;
+}
+.peixelogo{
+    width: 33px;
+    height: 45px;
+    
+}
+.redes{
+    margin-left: 0px;
+}
+
+
+.video-container {
+    height: 800px;
+    width: 95%;
+    margin: 80px;
+    margin-left: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.video-container .caption {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    color:white;
+    padding: 10px;
+}
+.banner-video{
+    display: flex;
+    flex-wrap: wrap;
+ 
+    height: 800px;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.titulo{
+    font-size: 68px;
+    width: 30rem;
+}
+
+
+
+.secoesloja{
+    height: 390px;
+    width: 95%;
+    margin: 80px;
+    margin-left: 20px;
+    display:flex;
+    justify-content: space-between;
+}
+.tipo-aquario, .itens-aquario, .planta-decoracao{
+    width: 300px;
+    height: 450px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.tipo-aquario, .itens-aquario, .planta-decoracao {
+    background-image: url(imagens/tipos-aquario.webp);
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position:center;
+    color:white; 
+}
+.itens-aquario{
+    background-image: url(imagens/itens-aquario.webp);
+}
+.planta-decoracao{
+    background-image: url(imagens/plantas-e-decoracao.webp);
+}
+.titulos{
+    font-size: 25px;
+    width: 8rem;
+}
+
+
+
+.sobre{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.texto{
+    font-size: 18px;
+    width: 38rem;
+}
+.minioceano-laranja{
+    color:#FC9823;
+    font-size: 50px;
+}
+p{
+    font-size: 20px;
+}
+
+
+
+
+.contato{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin: 0px;
+    background-color: #000769;
+    color: white;
+    font-size: 15px;
+    font-style: normal;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+}
+.contato > span{
+    margin-bottom: 500px;
+}
+.direitos{
+    padding-bottom: 10px;
+    background-color: #E4E4E4;
+}
+.direitos> *{
+    font-size: 13.5px;
+    margin:0px;
+}
+.rodape{
+    display: flex;
+    flex-direction: column;
+}
+.rodape > *{
+    margin-bottom: 10px;
+}
+
+.botao{
+    width: 150px;
+    height: 40px;
+    background-color: #FC9823;
+    color: #000769;
+    border: none;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+.botao:hover{
+    background-color: #00076963;
+    color: white;
+}
+
+
+
