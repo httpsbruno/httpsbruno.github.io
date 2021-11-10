@@ -1,0 +1,298 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /*font-family: 'Raleway', sans-serif;*/
+
+    color:#FFFFFF;
+    background-image: url(background/background-brigadeiro.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: rgba(17, 15, 15, 0.637);
+  
+
+}
+.menu > *{
+    padding-right: 50px;
+}
+
+.titulo{
+    font-family: 'Cookie', cursive;
+    font-size: 172px;
+    line-height:137.6px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.titulo-dois, .subtitulo{
+    font-family: proxima-n-w01-reg, sans-serif;
+font-size: 25px;
+font-style: normal;
+font-variant-caps: normal;
+font-variant-east-asian: normal;
+font-variant-ligatures: normal;
+font-variant-numeric: normal;
+font-weight: 400;
+}
+.subtitulo{
+font-size: 28px;
+font-weight: 500;
+width: 500px;
+
+}
+
+@font-face {font-family: "HelveticaW01-Roman"; 
+    src: url("//db.onlinewebfonts.com/c/c5bd605b45237a12c99133fa9d7cae49?family=HelveticaW01-Roman");
+}
+p {
+font-family: "Helvetica", sans-serif;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+}
+.textosabores{
+    padding-top: 20px;
+    width: 45rem;
+}
+
+nav, ul{
+    display: flex;
+    flex-direction: row;
+    background-color: #362E26;
+    list-style: none;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+.svg1{
+    width: 139px;
+    height: 34px;
+    fill:white;
+}
+
+
+
+.sobre{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #E78585;
+
+    background-image: url(background/fundo-confeti.webp); 
+    background-size: auto; 
+    background-repeat: repeat; 
+    background-position: center center;
+}
+.sobre-esquerda{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.sobre-direita > *{
+    text-align: left;
+    padding: 5px;
+    margin-right: 50px;
+}
+
+.nossossabores{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #362E26;
+    padding-top:50px;
+    padding-bottom: 60px;
+}
+.svg2{
+    width: 139px;
+    height: 34px;
+    fill: #E78585;
+}
+
+.brigadeiros{
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.brigadeiro-um, .brigadeiro-dois, .brigadeiro-tres {
+    width: 178px;
+    height: 175px;
+    margin: 30px;
+    padding: 0px;
+    background-image: url(Imagens/brigadeiro1.webp);
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position:center;
+}
+.brigadeiro-dois{
+    background-image: url(Imagens/brigadeiro2.webp);
+}
+.brigadeiro-tres{
+    background-image: url(Imagens/brigadeiro3.webp);
+}
+
+
+
+.quemfaz{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #70BABE;
+
+    background-image: url(background/fundo-listra.webp); 
+    background-size: auto; 
+    background-repeat: repeat; 
+    background-position: center center;
+    text-align: left;
+    padding: 50px;
+}
+
+.textoquemfaz {
+   margin-right: 50px;
+}
+
+
+.galeria{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.transparencia{
+    opacity: 0.8;
+}
+
+
+.contato{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #362E26;
+}
+.informacoes{
+    padding-right: 50px;
+    width: 13rem;
+}
+fieldset{
+    border: none;
+    margin: 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    /* width: 48%; */
+    align-items: flex-end;
+    padding-left: 60px; 
+    justify-content: center;
+    align-content: center;
+    color:white;
+}
+input,textarea{
+    height: 25px;
+    width: 487px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #504439;
+    resize: none;
+    margin-bottom: 5px;
+    color: white;
+    /*font-family: sans-serif;*/
+
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /*width: 18rem;*/
+}
+textarea{
+    height: 100px;
+}
+
+.cor-branca::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: white;
+}
+
+.cor-branca:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: white;
+    opacity: 1;
+}
+
+.cor-branca::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: white;
+    opacity: 1;
+}
+
+
+input:hover, textarea:hover {
+    border: 1px solid #ffffff;
+}
+
+
+
+
+.botao{
+    width: 150px;
+    height: 40px;
+    padding-top: 10px;
+    color: white;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    /*font-family: 'Raleway', sans-serif;*/
+    font-size: 15px;
+
+
+    box-sizing: border-box;
+
+    resize: none;
+  
+    background:linear-gradient(#887B6F, #655648);;
+
+}
+.botao:hover{
+    opacity: 0.8;
+}
+
+footer{
+    font-size: 10px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: #362E26;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    border-style: none;
+    border-top: 2px solid #90857B;
+    color: #90857B;
+}
+
+
