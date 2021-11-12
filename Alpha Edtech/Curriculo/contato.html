@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Contato</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Rock+Salt&display=swap" rel="stylesheet">
+        <!-- Colocar informações para o link-->
+    </head>
+    <body> 
+        <!-- Cabeçalho -->
+        <nav>        
+            <h1><a href="index.html">Bruno Santos<a></h1>
+            <h2>
+                <a href="curriculo.html">Currículo</a> | 
+                <a href="projetos.html">Projetos</a> | 
+                <a href="contato.html">Contato</a> </h2>
+       </nav>
+    
+        <!-- Conteúdo Principal -->
+        <h1 class="titulo"> Contato </h1>
+        <section> 
+                <div class="info esquerda"> 
+                    <p><strong>Telefone:</strong><br/>(11) 91234-5678</p> 
+                    <p><strong>E-mail:</strong><br/>brunineow@gmail.com</p> 
+                    <p><strong>Siga-me:</strong><br/>
+                        <a href="https://www.linkedin.com/in/bruno-barbosa-santos/">  <img src="icones/linkedin.png"></a>
+                        <a href="https://github.com/httpsbruno">   <img src="icones/github.png"></a>
+                        <a href="https://www.instagram.com/brunineow/">   <img src="icones/instagram.svg"></a>
+                        <a href="https://twitter.com/brunineow/">   <img src="icones/twitter.svg"></a>
+                    </p>    
+                </div>
+                <div Class="info direita">
+                    <fieldset>
+                        <legend><strong>Deseja entrar em contato comigo?</strong></legend>
+                            <input type="text" id="nome" placeholder="Nome"/>
+                            <input type="text" id="sobrenome" placeholder="Sobrenome" />
+                            <input type="email" id="email" placeholder="E-mail"/>
+                            <input type="email" id="assunto" placeholder="Assunto" />
+                            <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem aqui..."></textarea>
+                            <input class="botao" type="submit" value="Enviar" onclick="alert('Olá, ' + nome.value + ' sua mensagem foi enviada com sucesso!')"/>
+                      </fieldset>
+                </div>
+        </section>
+
+        <!-- Rodapé --> 
+        <footer>
+            <h4>Telefone:<br/> (11) 91234-5678 </h4> 
+            <h4>E-mail:<br/> brunineow@gmail.com </h4> 
+            <h4>Siga-me:<br/> 
+              <a href="https://www.linkedin.com/in/bruno-barbosa-santos/">  <img src="icones/linkedin.png"></a>
+              <a href="https://github.com/httpsbruno">   <img src="icones/github.png"></a>
+              <a href="https://www.instagram.com/brunineow/">   <img src="icones/instagram.svg"></a>
+              <a href="https://twitter.com/brunineow/">   <img src="icones/twitter.svg"></a>
+             </h4>
+        </footer>
+    </body>
+</html>
