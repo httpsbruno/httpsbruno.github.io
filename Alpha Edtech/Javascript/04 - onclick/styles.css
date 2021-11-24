@@ -188,6 +188,7 @@ input:hover, textarea:hover {
     justify-content: space-between;
     align-items: center;
     margin: 50px;
+    background-color: rgba(17, 15, 15, 0.637);
 }
 
 footer{
