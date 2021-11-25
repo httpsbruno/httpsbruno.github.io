@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+    <body>
+       
+        <section id="calculadora">
+            <span>Calculadora Básica</span>
+           <input id="num1" type="number" placeholder="Operador 1"></input>
+           <input id="num2" type="number" placeholder="Operador 2"></input>
+           
+           <div id="operadores">
+                <button id="plus" onclick="letsCalculate('plus');"> + </button>
+                <button id="less" onclick="letsCalculate('less');"> - </button>
+                <button id="times" onclick="letsCalculate('times');"> x </button>
+                <button id="div" onclick="letsCalculate('div');"> ÷ </button>
+           </div>
+
+           <span id="r"> </span>   
+        </section>
+
+        
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
