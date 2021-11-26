@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lanchonete</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Bruno's Burguer </h1>
+
+        <h2> Escolha o Pão </h2>
+        <fieldset class="radio-pao">
+            <label for="frances">
+                <input type="radio" name="pao" id="frances" value="frances" checked>
+                <img src="./assets/images/pao-frances.png" alt="pao-frances">
+                <span>R$3,00</span>
+            </label>
+            <label for="australiano">
+                <input type="radio" name="pao" id="australiano" value="australiano">
+                <img src="./assets/images/pao-australiano.png" alt="pao-australiano">
+                <span>R$8,00</span>
+            </label>
+            <label for="brioche">
+                <input type="radio" name="pao" id="brioche" value="brioche">
+                <img src="./assets/images/pao-brioche.png" alt="pao-brioche">
+                <span>R$6,00</span>
+            </label>
+        </fieldset>
+
+        <h2> Escolha o Hamburguer </h2>
+        <fieldset class="radio-burguer">
+            <label for="picanha">
+                <input type="radio" name="burguer" id="picanha" value="picanha" checked>
+                <img src="./assets/images/hamburguer-picanha.png" alt="hamburguer-picanha">
+                <span>R$13,00</span>
+            </label>
+            <label for="costela">
+                <input type="radio" name="burguer" id="costela" value="costela">
+                <img src="./assets/images/hamburguer-costela.png" alt="hamburguer-costela">
+                <span>R$10,00</span>
+            </label>
+            <label for="vegano">
+                <input type="radio" name="burguer" id="vegano" value="vegano">
+                <img src="./assets/images/hamburguer-vegano.png" alt="hamburguer-vegano">
+                <span>R$12,00</span>
+            </label>
+        </fieldset>
+
+        <h2> Escolha a Salada </h2>
+        <fieldset class="radio-salada">
+            <label for="alface">
+                <input type="radio" name="salada" id="alface" value="alface" checked>
+                <img src="./assets/images/alface.png" alt="alface">
+                <span>R$1,50</span>
+            </label>
+            <label for="tomate">
+                <input type="radio" name="salada" id="tomate" value="tomate">
+                <img src="./assets/images/tomate.png" alt="tomate">
+                <span>R$1,50</span>
+            </label>
+            <label for="semsalada">
+                <input type="radio" name="salada" id="semsalada" value="semsalada">
+                <img src="./assets/images/sem-salada.png" alt="semsalada">
+                <span>R$0,00</span>
+            </label>
+        </fieldset>
+
+        <h2> Escolha o Queijo </h2>
+        <fieldset class="radio-queijo">
+            <label for="mussarela">
+                <input type="radio" name="queijo" id="mussarela" value="mussarela" checked>
+                <img src="./assets/images/queijo-mussarela.png" alt="queijo-mussarela">
+                <span>R$3,00</span>
+            </label>
+            <label for="prato">
+                <input type="radio" name="queijo" id="prato" value="prato">
+                <img src="./assets/images/queijo-prato.png" alt="queijo-prato">
+                <span>R$3,00</span>
+            </label>
+            <label for="cheddar">
+                <input type="radio" name="queijo" id="cheddar" value="cheddar">
+                <img src="./assets/images/queijo-cheddar.png" alt="queijo-cheddar">
+                <span>R$5,00</span>
+            </label>
+        </fieldset>
+
+        <button id="Enviar" onclick="order();"> Enviar </button>
+
+        <section id="notinha"> 
+            <strong>Bruno's Burguers</strong>
+            <span>25/12/21 - 10:50:48</span>
+            <span>Lanche</span>
+            <ul id="items">
+                <li class="bread">Pão ......................... R$ 00,00</li>
+                <li class="meat">Hamburguer .................. R$ 00,00</li>
+                <li class="salad">Salada ...................... R$ 00,00</li>
+                <li class="cheese"> Queijo ..................... R$ 00,00</li>
+            </ul>
+
+            <strong class="total">Total: R$ 00,00</strong>
+        </section>
+
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
