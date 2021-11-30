@@ -20,13 +20,12 @@ function escrevendo(){
         cont++;
 
       if (cont == 11){
-           var li_del = document.getElementsByTagName("li");
-            while( delete_p < 11){
-               lista.removeChild;
-                delete_p ++;
-            }
+          
+           /* while( delete_p < 11){
+              //remover li
+            }*/
             apaga++;
-            delete_p = 0;
+           // delete_p = 0;
             cont = 0;
         }
    
