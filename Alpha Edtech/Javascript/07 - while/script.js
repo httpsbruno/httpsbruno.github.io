@@ -19,7 +19,7 @@ function escrevendo(){
         num++;
         cont++;
 
-     /* if (cont == 11){
+      if (cont == 11){
            var li_del = document.getElementsByTagName("li");
             while( delete_p < 11){
                lista.removeChild;
@@ -28,7 +28,7 @@ function escrevendo(){
             apaga++;
             delete_p = 0;
             cont = 0;
-        }*/
+        }
    
     }
 
