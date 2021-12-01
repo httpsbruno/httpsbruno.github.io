@@ -20,23 +20,15 @@ function startRun(num){
        runners_three = runners[2][1] * (runners[2][2] + 1);*/
 
        //desafio 1
-       min = Math.random() * (100 - 150) + 100;
-       max = Math.random() * (200 - 280) + 200;
-       runners[0][1] = Math.random() * ( min - max) + min;
-       min = Math.random() * (100 - 150) + 100;
-       max = Math.random() * (200 - 280) + 200;
-       runners[1][1] = Math.random() * ( min - max) + min;
-       min = Math.random() * (100 - 150) + 100;
-       max = Math.random() * (200 - 280) + 200;
-       runners[2][1] = Math.random() * ( min - max) + min;
-
+       for (let x = 0; x < 3; x++){
+          min = Math.random() * (100 - 150) + 100;
+          max = Math.random() * (200 - 280) + 200;
+          runners[x][1] = Math.random() * ( min - max) + min;
+       }
 
        runners_one   = runners[0][1] * ( (Math.random() * (0.1 - 0.8) + 0.1) + 1);
        runners_two   = runners[1][1] * ( (Math.random() * (0.1 - 0.8) + 0.1) + 1);
        runners_three = runners[2][1] * ( (Math.random() * (0.1 - 0.8) + 0.1) + 1);
-
-       
-      
        
        if (runners_one >  runners_two && runners_one >  runners_three){
             runners[0][3]++;
