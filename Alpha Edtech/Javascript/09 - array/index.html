@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>Ordenando um Vetor</h1>
+
+        <section id="numeros">
+
+            <input class="num1" type="number"></input>
+            <input class="num2" type="number"></input>
+            <input class="num3" type="number"></input>
+            <input class="num4" type="number"></input>
+
+            <button class="memoria" type="submit" onclick="memorizarNumeros()"> Inserir na Memória </button>
+       
+        </section>
+        
+        <section id="ordenar" >
+            <div class="numeros-memoria">
+                <span class="mem1"></span>
+                <span class="mem2"></span>
+                <span class="mem3"></span>
+                <span class="mem4"></span>
+            </div>
+            <button class="ondem-btn1" type="submit" onclick="ordemCrescente()"> Crescente </button>
+            <button class="ordem=btn2" type="submit" onclick="ordemDecrescente()"> Decrescente </button>
+        </section>
+
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
