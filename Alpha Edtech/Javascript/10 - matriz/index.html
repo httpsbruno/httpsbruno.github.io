@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="titulo-site">Tic - Tac - Toe</h1>
+
+    <section>
+
+    <div id="tic-tac-toe">
+        <div id="row-1" class="coluna">
+            <button type="button" id="btn-00" class="botao" onclick=sendPositon(0,0)></button>
+            <button type="button" id="btn-10" class="botao" onclick=sendPositon(1,0)></button>
+            <button type="button" id="btn-20" class="botao" onclick=sendPositon(2,0)></button>
+        </div>
+        <div id="row-2" class="coluna">
+            <button type="button" id="btn-01" class="botao" onclick=sendPositon(0,1)></button>
+            <button type="button" id="btn-11" class="botao" onclick=sendPositon(1,1)></button>
+            <button type="button" id="btn-21" class="botao" onclick=sendPositon(2,1)></button>
+        </div>
+        <div id="row-3" class="coluna">
+            <button type="button" id="btn-02" class="botao" onclick=sendPositon(0,2)></button>
+            <button type="button" id="btn-12" class="botao" onclick=sendPositon(1,2)></button>
+            <button type="button" id="btn-22" class="botao" onclick=sendPositon(2,2)></button>
+        </div>
+    </div>
+
+    <div class="info">
+        <button id="clear-btn" type="button" onclick=clean()>Limpar</button>
+    
+        <div id="winner"></div>
+    </div>
+    </section>
+    
+    <script type="text/javascript"  src="script.js"></script>
+</body>
+</html> 
+    
