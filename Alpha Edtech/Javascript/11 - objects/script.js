@@ -18,8 +18,25 @@ function startRun(num){
                     velocidade: 0 ,
                     derrapagem: 0.5,
                     raridade: "",
-                    pontos: 0},];
+                    pontos: 0}];
     let min, max, der;
+
+    let cars = {"popular": {
+     "velocidade_maxima": {"min": 180, "max": 200}, 
+     "velocidade_minima": {"min": 110, "max": 130}, 
+     "derrapagem": {"min": 3, "max": 4}
+   },
+   "sport": {
+     "velocidade_maxima": {"min": 195, "max": 215}, 
+     "velocidade_minima": {"min": 125, "max": 145}, 
+     "derrapagem": {"min": 2, "max": 3}
+   },
+   "supersport": {
+     "velocidade_maxima": {"min": 210, "max": 230}, 
+     "velocidade_minima": {"min": 140, "max": 160}, 
+     "derrapagem": {"min": 1, "max": 1.75}
+   },
+ }
 
     for(let i = 0; i <num; i++){
 
@@ -40,19 +57,17 @@ function startRun(num){
      //adiconcar velocidade
        for (let y = 0; y < 3; y++){
           if (runners[y].raridade == "Popular"){
-               min = Math.random() * (1100 - 130) + 110;
-               max = Math.random() * (180 - 200) + 180;
-               der = ((Math.random() * (0.3 - 0.4) + 0.3) + 1);
+               min = Math.random() * (cars.popular.velocidade_minima.min - cars.popular.velocidade_minima.max) + cars.popular.velocidade_minima.min;
+               max = Math.random() * (cars.popular.velocidade_maxima.min - cars.popular.velocidade_maxima.max) +cars.popular.velocidade_maxima.min;    
+               der = ((Math.random() * (cars.popular.derrapagem.min - cars.popular.derrapagem.max) + cars.popular.derrapagem.min) + 1);
           } else if (runners[y].raridade == "Sport"){
-               min = Math.random() * (125 - 145) + 125;
-               max = Math.random() * (195 - 215) + 195;
-               der = ((Math.random() * (0.2 - 0.3) + 0.2) + 1);
-
+               min = Math.random() * (cars.sport.velocidade_minima.min - cars.sport.velocidade_minima.max) + cars.sport.velocidade_minima.min;
+               max = Math.random() * (cars.sport.velocidade_maxima.min - cars.sport.velocidade_maxima.max) +cars.sport.velocidade_maxima.min;    
+               der = ((Math.random() * (cars.sport.derrapagem.min - cars.sport.derrapagem.max) + cars.sport.derrapagem.min) + 1);
           }else {
-               min = Math.random() * (140 - 160) + 140;
-               max = Math.random() * (210 - 230) + 210;
-               der = ((Math.random() * (0.1 - 0.175) + 0.1) + 1);
-
+               min = Math.random() * (cars.supersport.velocidade_minima.min - cars.supersport.velocidade_minima.max) + cars.supersport.velocidade_minima.min;
+               max = Math.random() * (cars.supersport.velocidade_maxima.min - cars.supersport.velocidade_maxima.max) +cars.supersport.velocidade_maxima.min;    
+               der = ((Math.random() * (cars.supersport.derrapagem.min - cars.supersport.derrapagem.max) + cars.supersport.derrapagem.min) + 1);
           }
 
           

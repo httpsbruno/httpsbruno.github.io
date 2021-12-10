@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alpha Kart</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>Alpha Kart</h1>
+
+        <section id="run-buttons">
+            <button class="submit-button" type="submit" onclick="startRun(10)"> Corrida Rápida </button>
+            <button class="submit-button" type="submit" onclick="startRun(70)"> Grande Prêmio </button>
+            <button class="submit-button" type="submit" onclick="startRun(160)"> Enduro  </button>
+       
+        </section>
+        
+        <section id="podium" >
+            <div id="second">
+                <img src="./assets/segundo.png">
+                <strong class="second-winner"></strong>
+                <strong class="second-points"></strong>
+                <strong class="car2"></strong>
+                <strong class="level-points2"></strong>
+            </div>
+
+            <div id="first">
+                <img src="./assets/primeiro.png">
+                <strong class="first-winner"></strong>
+                <strong class="first-points"></strong>
+                <strong class="car1"></strong>
+                <strong class="level-points1"></strong>
+            </div>
+
+            <div id="third">
+                <img src="./assets/terceiro.png">
+                <strong class="third-winner"></strong>
+                <strong class="third-points"></strong>
+                <strong class="car3"></strong>
+                <strong class="level-points3"></strong>
+            </div>
+            
+        </section>
+
+        <strong class="level10"></strong>
+
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
