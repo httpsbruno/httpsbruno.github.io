@@ -18,7 +18,7 @@ function inserirCompra() {
   
      //Limpando
      document.getElementById("nome").value = "";
-     document.getElementById("data").vaue = "";
+     document.getElementById("data").value = "";
      document.getElementById("valor").value = "";
 
      insereTabela();
