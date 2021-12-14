@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>C&aacute;lculo de Juros</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        
+
+        <section id="formulario">
+            <h1>C&aacute;lculo de Juros</h1>
+            <input type="text" id="nome" placeholder="Nome"/>
+            <input type="date" id="data" placeholder="Data de Vencimento"/>          
+            <input type="number" id="valor" placeholder="Valor da compra" />
+
+            <input type="submit" value="Inserir Compra" class="botao" onclick="inserirCompra()"/>
+            
+        </section>
+
+
+        <section id="tabela">
+            <div>
+              <h2>Lista de Clientes</h2>
+              <table>
+                  <tr>
+                      <th>Cliente</th>
+                      <th>Vencimento</th>
+                      <th>Compra</th>
+                      <th>Juros (%)</th>
+                      <th>Juros (R$)</th>
+                      <th>Total</th>
+                </tr>
+            </table>
+            </div>
+
+            <div>
+            <input type="submit" value="Calcular juros" class="botao" onclick="calcularJuros()"/>
+            <input type="submit" value="Organizar Data" class="botao" onclick="organizarData()"/>
+            <input type="submit" value="Organizar Nome" class="botao" onclick="organizarNome()"/>
+            </div>
+        </section>
+       
+        <div id="teste"></div>
+        
+        <section id="agrupamento">
+                
+            <ul>
+
+            </ul>
+        </section>
+        
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
