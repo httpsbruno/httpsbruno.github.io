@@ -20,7 +20,7 @@ function inserirCompra() {
      document.getElementById("nome").value = "";
      document.getElementById("data").value = "";
      document.getElementById("valor").value = "";
-
+     somaTotal();
      insereTabela();
 }
 
@@ -34,6 +34,7 @@ function calcularJuros(){
           }
      });
 
+     somaTotal();
      insereTabela();
 }
 function getJurosCompra(comprasItem) {
@@ -132,38 +133,51 @@ function dataDiaMesAno(date) {
 
 //Novas funcionaliddes
 
-console.log = function(message) {
-     document.getElementById('teste').innerHTML = message;
-}
+function organizarData() {
 
-async function organizarData(){
-   let groupData = agruparPor(compras, 'data');
+     function compData(a, b) {
+          const dataA = a.data.getTime();
+          const dataB = b.data.getTime();
+  
+          let compData = 0;
+          if (dataA > dataB) {
+               compData = 1;
+          } else if (dataA < dataB) {
+               compData = -1;
+          }
+          return compData;
+      }
 
-   document.getElementById('teste').innerHTML = JSON.stringify(groupData);
-
-   // console.log(groupData);
-     
-}
-
-
-
-
-async function organizarNome(){
-     let groupNome = agruparPor(compras, 'nome');
-     //console.log(groupNome);
-     document.getElementById('teste').innerHTML = JSON.stringify(groupNome);
-     //  desenhandoAgrupamento(groupNome);
-}
-
-function agruparPor(objetoArray, propriedade) {
-     return objetoArray.reduce(function (acc, obj) {
-       let key = obj[propriedade];
-       if (!acc[key]) {
-         acc[key] = [];
-       }
-       acc[key].push(obj);
-       return acc;
-     }, {});
-   }
+      compras = compras.sort(compData);
 
 
+     insereTabela();
+ }
+ 
+ function organizarNome() {
+     function compNome(a, b) {
+         const nameA = a.nome.toUpperCase();
+         const nameB = b.nome.toUpperCase();
+ 
+         let compNome = 0;
+         if (nameA > nameB) {
+             compNome = 1;
+         } else if (nameA < nameB) {
+             compNome = -1;
+         }
+         return compNome;
+     }
+     compras = compras.sort(compNome);
+
+     insereTabela();
+ }
+
+
+ function somaTotal( ) {
+     const elemento = compras;
+     var soma = elemento.reduce(function (acc, comprasItem) {
+         return (parseFloat(acc) + parseFloat(comprasItem.valor + (comprasItem.valor * comprasItem.juros/100))).toFixed(2);
+     }, 0);
+ 
+     document.getElementById('total').innerHTML = "Total: " + valorEmReais(soma);
+ }
