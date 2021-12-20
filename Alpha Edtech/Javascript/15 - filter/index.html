@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>C&aacute;lculo de Juros</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        
+
+        <section id="formulario">
+            <div id="esquerda">
+            <h1>C&aacute;lculo de Juros</h1>
+            <input type="text" id="nome" placeholder="Nome"/>
+            <input type="date" id="data" placeholder="Data de Vencimento"/>          
+            <input type="number" id="valor" placeholder="Valor da compra" />
+
+            <input type="submit" value="Inserir Compra" class="botao" onclick="inserirCompra()"/>
+            </div>
+
+
+            <div id="direita">
+                <h2> Pesquisar</h2>
+                <div>
+                    <input type="date" id="dataini" placeholder="DataInicio"/>
+                    <input type="date" id="datafim" placeholder="DataFim"/>
+                    <input type="submit" value="Por Data" class="botao" onclick="filtrarData()"/>
+                </div>
+    
+                <div>
+                    <input type="number" id="valormin" placeholder="ValorMin" />
+                    <input type="number" id="valormax" placeholder="ValorMax" />
+                    <input type="submit" value="Por Valor" class="botao" onclick="filtrarValor()"/>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="tabela">
+            <div>
+              <h2>Lista de Clientes</h2>
+              <table>
+                  <tr>
+                      <th>Cliente</th>
+                      <th>Vencimento</th>
+                      <th>Compra</th>
+                      <th>Juros (%)</th>
+                      <th>Juros (R$)</th>
+                      <th>Total</th>
+                </tr>
+            </table>
+            </div>
+            <div id="total"></div>
+            <div>
+            <input type="submit" value="Calcular juros" class="botao" onclick="calcularJuros()"/>
+            <input type="submit" value="Organizar Data" class="botao" onclick="organizarData()"/>
+            <input type="submit" value="Organizar Nome" class="botao" onclick="organizarNome()"/>
+            </div>
+        </section>
+       
+        <div id="total-pessoa">
+        <div>
+        
+        
+        
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
