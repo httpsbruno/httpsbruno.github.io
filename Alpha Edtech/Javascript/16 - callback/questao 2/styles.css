@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(20, 79, 112, 0.8);
+    color: white;
+  }
+
+
+  
+#balls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+  
+.numbers {
+    height: 100px;
+    width: 100px;
+    border-radius: 20%;
+    background-color: rgb(240, 232, 240);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin: 10px;
+    font-weight: bold;
+}
+  
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #btn-sortear {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: rgb(248, 164, 85);
+    color: white;
+    font-size: 20px;
+ 
+  }
+
+ 
+  
+  #btn-sortear:disabled {
+    background-color: rgba(248, 164, 85, 0.555);
+  }
+  
+  h1, div, button{
+    text-align: center;
+    font-family: 'Righteous', cursive;
+}
