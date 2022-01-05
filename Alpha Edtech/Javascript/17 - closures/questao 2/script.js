@@ -49,10 +49,3 @@ function aumentar(){
 function insereTamanhoHtml(tamanho){
      document.getElementById("fonte").innerHTML = "Tamanho da Fonte: " + tamanho;
 }
-  /* alert(Counter.value()); 
-   Counter.increment();
-   Counter.increment();
-   alert(Counter.value());
-   Counter.decrement();
-   alert(Counter.value()); 
-   */
