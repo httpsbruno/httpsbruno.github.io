@@ -1,0 +1,45 @@
+[
+    {
+        "numeroMatricula": 1,
+        "nome": "Juliana Silva",
+        "ramal": 2,
+        "email": "juliana.silva@gmail.com",
+        "setor": "Contabilidade", 
+        "dataNascimento": "12/08/1990"
+    },
+    {
+        "numeroMatricula": 2,
+        "nome": "Abner Santos",
+        "ramal": 9,
+        "email": "abner.santos@gmail.com",
+        "setor": "Administração", 
+        "dataNascimento": "20/01/1985"
+    },
+    {
+        "numeroMatricula": 3,
+        "nome": "Roberta Lima",
+        "ramal": 1,
+        "email": "roberta.lima@gmail.com",
+        "setor": "Tecnologia", 
+        "dataNascimento": "26/08/1990"
+    },
+    {
+        "numeroMatricula": 4,
+        "nome": "Eduardo Souza",
+        "ramal": 1,
+        "email": "eduardo.spuza@gmail.com",
+        "setor": "Tecnologia", 
+        "dataNascimento": "01/09/1992"
+    },
+    {
+        "numeroMatricula": 1,
+        "nome": "Isabella Alves",
+        "ramal": 9,
+        "email": "isabella.alves@gmail.com",
+        "setor": "Administração", 
+        "dataNascimento": "10/04/2000"
+    }
+]
+
+
+
