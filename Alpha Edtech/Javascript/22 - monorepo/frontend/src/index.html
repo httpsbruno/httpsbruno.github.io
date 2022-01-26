@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Empresa Alpha</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section id="formulario">
+            <h1>Empresa Alpha</h1>
+
+            <div id="esquerda">
+                <h2>Cadastrar Funcionários</h2>
+                <input type="number" id="numMatricula" placeholder="Nº Matricula" />
+                <input type="text" id="nome" placeholder="Nome"/>
+                <input type="number" id="ramal" placeholder="Ramal" />
+                <input type="email" id="email" placeholder="E-mail"/>
+                <input type="text" id="setor" placeholder="Setor"/>
+                <input type="date" id="data" placeholder="Data de Nascimento"/>          
+
+                <button id="Insert" >Inserir</button>
+            </div>
+
+
+            <div id="direita">
+                <h2>Consultar Funcionários</h2>
+                <div>
+                    <strong>Pesquisar Por: </strong>
+                    <select name="options" id="options">
+                        <option value="mes">Aniversariante</option>
+                        <option value="setor">Setor</option>
+                        <option value="ramal">Ramal</option>
+                    </select>
+                    <input type="text" id="conteudo" placeholder="Digite o texto aqui"/>
+            
+                    <button id="Search" > Pesquisa </button>
+                </div>
+            </div>
+        </section>
+
+
+       <section id="tabela">
+                <table>
+                    <tr>
+                        <th>Matricula</th>
+                        <th>Nome</th>
+                        <th>Ramal</th>
+                        <th>Email</th>
+                        <th>Setor</th>
+                        <th>Nascimento</th>
+                    </tr>
+                </table>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>
