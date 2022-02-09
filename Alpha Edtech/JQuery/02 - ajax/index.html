@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pessoas</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+       <main id="main">
+            <h2> Variação de Moedas </h2>
+            <section>
+                <strong>Escolha a Moeda: </strong>
+                <select id="moedas"></select>
+            </section>
+
+            <section id="divs">
+                <div id="box1">
+                    <h2>Valor Atual</h2>
+                        <p>data: / /  hora: 00:00</p>
+                        <p>valores mínimos e máximos </p>
+                      <p>valor de fechamento: Compra (bid) Venda: (ask)</p>
+                </div>
+
+                <div id="box2">
+                    <h2>Buscar por Perídodo</h2>
+
+                    <div>
+                        <strong>Início: </strong>
+                        <input type="date" id="data-ini">
+                    </div>
+                    <div>
+                        <strong>Fim: </strong>
+                        <input type="date" id="data-fim">
+                    </div>
+                    <button id="btn-search"> Pesquisar </button>
+                </div>
+            
+            </section>
+
+
+        </main>
+
+       
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Hora</th>
+                    <th>Compra</th>
+                    <th>Venda</th>
+                    <th>Máximo</th>
+                    <th>Mínimo</th>
+                    <th>Variação</th>
+                    <th>Porcentagem</th>
+                </tr>
+            </thead>
+            <tbody id="resposta"></tbody>
+        </table>
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src='script.js'> </script>
+    </body>
+</html>
