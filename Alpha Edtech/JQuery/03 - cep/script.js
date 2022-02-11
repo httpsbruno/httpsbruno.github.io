@@ -27,6 +27,11 @@ $(document).ready( function (){
 
                     //map
                     $("#box2").html(`<iframe width="350" height="300" src="https://maps.google.com/maps?q=${data.lat},${data.lng}&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>`).animate();
+                })
+                .fail(() => {
+                    alert("Este CEP n\u00e3o existe");
+                    $("#box1").hide();
+                    $("#box2").hide();
                 });
         }
 
