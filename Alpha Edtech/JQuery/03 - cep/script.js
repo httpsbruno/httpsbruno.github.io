@@ -9,7 +9,7 @@ $(document).ready( function (){
             cep = cep.replace("-", "");
         }else if(cep.length != 8 || isNaN(cep) == true){
             validate = false;
-            alert("CEP inválido");
+            alert(`CEP Inv\u00e1lido`);
         }
 
         if (validate){
@@ -19,9 +19,9 @@ $(document).ready( function (){
                 .done( (data) => {
                     $("#box1").html(`
                         <p><strong>CEP:</strong> ${data.cep.substring(0,5)}-${data.cep.substring(5,8)}</p>
-                        <p><strong>Address:</strong> ${data.address}</p>
-                        <p><strong>District:</strong> ${data.district}</p>
-                        <p><strong>City:</strong> ${data.city} - <strong>State:</strong> ${data.state}</p>`);
+                        <p><strong>Endere\u00e7o:</strong> ${data.address}</p>
+                        <p><strong>Bairro:</strong> ${data.district}</p>
+                        <p><strong>Cidade:</strong> ${data.city} - <strong>Estado:</strong> ${data.state}</p>`);
                             
                     $("#cep").val("");
 
