@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+    color: rgb(247, 184, 103);
+    background-color: rgb(206, 206, 206);
+}
+#tabs{
+    width: 69%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+header {
+    background-color: #007fff;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+#player{
+   display: flex;
+}
+p {
+    color: rgb(236, 146, 28);
+    margin: 0px;
+}
+
+.info {
+    height: 30px;
+}
