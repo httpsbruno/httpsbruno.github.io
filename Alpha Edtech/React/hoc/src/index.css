@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(185, 179, 179, 0.822);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+div .content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+  
+}
+div.card{
+  display: flex;
+   width: -moz-fit-content;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+  
+    border-radius: 5px;
+}
+
+img {
+  max-width: 180px;
+  border-radius: 50%;
+  margin: 15px;
+}
+
+h2.faixa {
+  position: absolute;
+  width: 200px;
+  text-align: center;
+  border-radius: 10px;
+  color: aliceblue;
+  
+}
+
+.alive-bg{
+  background-color: rgb(127, 161, 150);
+}
+.dead-bg {
+  background-color: rgb(179, 112, 112);
+}
+
+.unknown-bg {
+  background-color: rgb(139, 148, 145);
+}
+
+.dead {
+  background-color: rgb(194, 71, 71);
+}
+
+.unknown {
+  background-color: rgb(109, 108, 97);
+}
+
+input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 20%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
