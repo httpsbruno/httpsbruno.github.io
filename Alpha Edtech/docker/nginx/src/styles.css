@@ -1,0 +1,344 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    /*font: normal normal normal 30px/1.4em dinneuzeitgroteskltw01-_812426,sans-serif;*/
+    background-color: rgb(3, 3, 3);
+    color:white;
+}
+header, ul {
+    display:flex;
+    list-style: none;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+    font-style: bold;  
+    font-size: 40px/1.4em;  
+}
+header{
+    position: fixed;
+    width:100%;
+    background-color: rgba(3, 3, 3, 0.74);
+    justify-content: space-between;
+   
+}
+
+li, .logo{
+    margin-left: 60px;
+    margin-right: 20px;
+    margin-top:20px;
+    justify-content: space-between;
+ 
+}
+.logo{
+    font: normal normal normal 30px/1.4em dinneuzeitgroteskltw01-_812426,sans-serif;
+    padding-bottom: 10px;
+}
+li{
+    font-size: 15px;
+    padding-top: 10px;
+ 
+}
+.carrinho{
+    width: 80px;
+    height: 25px;
+    fill: white;
+    margin-bottom: 5px;
+    padding-top: 0px;
+}
+
+.lateral{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    right: 1px;
+    background-color: rgba(22, 21, 21, 0.568);
+    width: 50px;
+}
+.redes{
+    margin:0px;
+    padding: 5px;
+}
+section{
+    background-color: rgb(90, 90, 90);
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+}
+.banner-inicial {
+    background-image: url(Imagens/banner-inicial.webp);
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position:center;
+    display: flex;
+    height: 350px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; 
+}
+.tituloum{
+    font-size: 55px;
+    width: 11em;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+
+.seta{
+    width: 30px;
+    height: 30px;
+    fill: white;
+}
+
+
+.lancamentos {
+    background-image: url(Imagens/mochila-lancamentos.webp);
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position:right;
+    display: flex;
+    height: 350px;
+    align-items: left;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(3, 3, 3);
+}
+.titulodois{
+    font-size: 30px;
+    width: 50%;
+}
+.btn{
+    font-size: 15px;
+    width: 50%;
+}
+
+
+
+
+.destaques {
+    display: flex;
+    justify-content: center;
+    height: 336px;
+}
+.mochilas, .mochilas-de-carga, .mochilas-de-viagem{
+    width: 336px;
+    height: 336px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.mochilas :nth-child(1), .mochilas-de-carga :nth-child(1), .mochilas-de-viagem :nth-child(1){
+    display: none;
+}
+.mochilas:hover :nth-child(1), .mochilas-de-carga:hover :nth-child(1), .mochilas-de-viagem:hover :nth-child(1){
+    display: flex;
+    font-size: 20px;
+    font-style: bold;
+}
+.mochilas:hover, .mochilas-de-carga:hover , .mochilas-de-viagem:hover{
+    opacity: 0.6;
+}
+.mochilas,.mochilas-de-carga,.mochilas-de-viagem {
+    background-image: url(Imagens/mochilas.webp);
+    background-repeat: no-repeat;
+    background-size:336px 336px;
+    background-position:center;
+}
+.mochilas-de-carga{
+    background-image: url(Imagens/mochilas-de-carga.webp);
+}
+.mochilas-de-viagem{
+    background-image: url(Imagens/mochilas-de-viagem.webp);
+}
+
+
+
+
+.liquidacao {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 400px;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(3, 3, 3);
+}
+
+
+
+
+
+.quemsomos {
+    background-image: url(Imagens/quemsomos.webp);
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position:center;
+    display: flex;
+    height: 350px;
+  
+}
+
+.quemparagrafo, .quemtitulo{
+    text-align: left;
+    margin-left: 200px;
+    margin-right: 40px;
+    padding: 0px;
+    font-size: 15px;
+}
+.quemtitulo{
+    font-size: 30px;
+}
+.informacao{
+    background-color: rgba(0, 0, 0, 0.473);
+    height: 350px;
+    width: 50%;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+
+
+
+
+.contato{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #020202;
+}
+.field-contato{
+    border: none;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 48%;
+  
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 50px;
+}
+input,textarea{
+    height: 20px;
+    padding: 12px;
+    box-sizing: border-box;
+    border: none;
+    background-color:white;
+    resize: none;
+    margin: 1px;
+    color: white;
+    font-family: sans-serif;
+    
+    flex-direction: column;
+     
+    flex-wrap: nowrap;
+    width: 18rem;
+}
+textarea{
+    height: 100px;
+}
+
+input:hover, textarea:hover {
+    border: 2px solid #888484;
+   
+}
+.informacoes{
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    width: 45%;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: center;
+}
+  
+.infoparagrafo, .infotitulo{
+    text-align: left;
+    margin-left: 0px;
+    margin-right: 200px;
+    padding: 0px;
+    font-size: 15px;
+}
+.infotitulo{
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+.assine {
+    background-color: #141414;
+    display: flex;
+    padding-top: 50px;
+    height: 150px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.assineemail, .botao{
+    height: 20px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ffffff;
+    background-color: #141414;
+    resize: none;
+    margin: 5px;
+    color: white;
+    font-family: sans-serif;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; 
+    flex-wrap: nowrap;
+}
+.assineemail{
+    width: 25rem;
+}
+.assineemail:focus, .assineemail:hover{
+    height: 20px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 3px solid #ffffff;
+    background-color: #141414;
+    resize: none;
+}
+
+.botao{
+    width: auto;
+}
+.botao:hover{
+    border: 2px solid #888484;
+    color: #888484;
+}
+.field-email{
+    border:none;
+    width: 80%;
+}
+
+
+footer{
+    font-size: 10px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: #1A1919;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    border-style: none;
+}
